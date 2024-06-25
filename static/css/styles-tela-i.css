@@ -1,0 +1,303 @@
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the body */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+header .logo img {
+    height: 40px;
+    transition: height 0.3s ease;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header .nav-links {
+    display: flex;
+    list-style: none;
+}
+
+header .nav-links li {
+    margin-left: 20px;
+}
+
+header .nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+header .menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+header .menu-toggle img {
+    height: 30px;
+}
+
+/* Main styles */
+main {
+    text-align: center;
+}
+
+main .hero {
+    background-color: #f8f8f8;
+    padding: 100px 20px;
+}
+
+main .hero img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+main .hero h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+main .hero button {
+    background-color: #239757;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+main .info {
+    background-color: #239757;
+    color: #fff;
+    padding: 100px 20px;
+}
+
+main .info img {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+main .info h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+main .info button {
+    background-color: #fff;
+    color: #239757;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+main .about {
+    padding: 100px 20px;
+}
+
+main .about h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+main .about p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Footer styles */
+footer {
+    background-color: #239757;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+footer .footer-content div {
+    margin-bottom: 20px;
+}
+
+footer .footer-content h3 {
+    margin-bottom: 10px;
+}
+
+footer .footer-content ul {
+    list-style: none;
+}
+
+footer .footer-content ul li {
+    margin-bottom: 10px;
+}
+
+footer .footer-content ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .footer-content .footer-logo img {
+    height: 40px;  /* Reduce the height of the footer logo */
+    margin-right: 10px;
+    filter: brightness(0) invert(1); /* This will make the image white */
+}
+
+footer .footer-social ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer-social ul li {
+    margin: 0 10px;
+}
+
+footer .footer-social ul li img {
+    height: 24px;
+}
+
+footer .footer-bottom {
+    border-top: 1px solid #fff;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        border-top: 1px solid #ddd;
+    }
+
+    header .nav-links.active {
+        display: flex;
+    }
+
+    header .nav-links li {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    header .menu-toggle {
+        display: block;
+    }
+
+    header .logo img {
+        height: 30px;
+    }
+
+    main .hero h1 {
+        font-size: 20px;
+    }
+
+    main .hero img {
+        width: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo img {
+        height: 20px;
+    }
+
+    main .hero h1 {
+        font-size: 18px;
+    }
+
+    main .hero img {
+        width: 60px;
+    }
+
+    main .info h2 {
+        font-size: 18px;
+    }
+}
+
+/* Responsive styles for navigation menu */
+@media (max-width: 768px) {
+    header .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        border-top: 1px solid #ddd;
+    }
+
+    header .nav-links.active {
+        display: flex;
+    }
+
+    header .nav-links li {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    header .menu-toggle {
+        display: block;
+    }
+
+    header .logo img {
+        height: 30px;
+    }
+
+    main .hero h1 {
+        font-size: 20px;
+    }
+
+    main .hero img {
+        width: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo img {
+        height: 20px;
+    }
+
+    main .hero h1 {
+        font-size: 18px;
+    }
+
+    main .hero img {
+        width: 60px;
+    }
+
+    main .info h2 {
+        font-size: 18px;
+    }
+}

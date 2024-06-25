@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Ciclista Legal</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="wrapper">
+        <main>
+            <div class="form-container">
+                <img src="{% static 'img/bike_icon.png' %}" alt="Logo" class="form-logo">
+                <h2>Ciclista Legal</h2>
+                <h3>LOGIN</h3>
+                <form action="login_process.php" method="post">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="password" placeholder="Senha" required>
+                   <button><a href="{% url 'denuncia' %}"  type="submit">LOGAR </a></button>
+                </form>
+                <p><a href="{% url 'reset' %}">Esqueceu sua senha? Redefinir.</a></p>
+                <p><a href="{% url 'cadastro' %}">Cadastro</a></p>
+            </div>
+        </main>
+        <footer>
+            <p>© 2024 Ciclista Legal</p>
+        </footer>
+    </div>
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

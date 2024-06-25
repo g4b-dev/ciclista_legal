@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denúncia - Ciclista Legal</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="wrapper">
+        <main>
+            <div class="form-container">
+                <img src="{% static 'img/bike_icon.png' %}" alt="Logo" class="form-logo">
+                <h2>Ciclista Legal</h2>
+                <h3>DENÚNCIA</h3>
+                <form action="denuncia_process.php" method="post">
+                    <input type="text" name="name" placeholder="Nome" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="denuncia" placeholder="Descreva a denúncia" required></textarea>
+                    <button type="submit">ENVIAR</button>
+                </form>
+                <p><a href="{% url 'login' %}">Voltar ao Login.</a></p>
+            </div>
+        </main>
+        <footer>
+            <p>© 2024 Ciclista Legal</p>
+        </footer>
+    </div>
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
